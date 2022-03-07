@@ -1,0 +1,139 @@
+@charset "UTF-8";
+html {
+	overflow-y: scroll;
+    /* IEへの対応 http://www.htmq.com/style/overflow-y.shtml */
+	/*Internet Explorerが独自に追加したプロパティ*/
+	/*画面に収まりきれなかったときにスクロールして表示することを許可するか否か*/
+}
+/* リセットおまじない--------------------------------- */
+
+body, h1, h2, h3, h4, h5, p, ul, ol, li, dl, dt, dd {
+	margin: 0px;
+	padding: 0px;
+}
+body {
+	background: #fff;
+	text-align: center;
+	font-size: 16px;
+	line-height: 1.4;
+	min-width: 100%;
+	-webkit-text-size-adjust: 100%;
+}
+li {
+	list-style: none;
+}
+a {
+	outline: none;
+	color: inherit;
+	text-decoration: none;
+}
+img {
+	border: 0px;
+	vertical-align: bottom;
+}
+/* --------------------------------------------------- */
+
+body {
+	font-family: "Noto Sans Japanese", "ヒラギノ角ゴ Pro W3", "Hiragino Kaku Gothic Pro", "ヒラギノ角ゴ ProN W3", "Hiragino Kaku Gothic ProN", "游ゴシック", YuGothic, "メイリオ", "Meiryo", "HGPｺﾞｼｯｸM", "Osaka", "ＭＳ Ｐゴシック", sans-serif, Century Gothic, Arial;
+}
+
+header {
+    width: 100%;
+    height: 70px;
+    background-color: rgba(16, 16, 44, 0.644);
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    position: fixed;
+    top: 0;
+    left: 0;
+    z-index: 10;
+}
+
+header .logo {
+    font-size: 28px;
+    font-weight: 700;
+}
+
+.logo img {
+    width: 40px;
+    height: 40px;
+    margin: 5px;
+}
+
+header nav {
+    width: 50%;
+}
+
+header ul {
+    width: 100%;
+    display: flex;
+    justify-content: space-around;
+}
+
+header li a {
+    font-size: large;
+    color: rgba(250, 235, 215, 0.705);
+}
+
+
+#main_visual {
+    width: 100%;
+    height: 85vh;
+    background: no-repeat center center;
+    background-size: cover;
+    background-image: url(../img/camp.jpeg);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+#main_visual h1 {
+    color: rgba(250, 235, 215, 0.342);
+    font-weight: 700;
+    font-size: 48px;
+}
+
+#about,#gallery,#info{
+    width: 80%;
+    margin: 100px auto;
+}
+
+#about, #info {
+    display: flex;
+    align-items: center;
+}
+
+#about img {
+    width: 50%;
+    height: 50%;
+    object-fit: cover;
+}
+
+#about .about_box, #info .info_box {
+    width: 50%;
+    padding: 30px;
+}
+
+#about .about_box h2 {
+    padding-bottom: 20px;
+}
+
+#gallery .gallery_images {
+    width: 90%;
+    column-count: 3;
+    column-gap: 0;
+    margin: 0 auto;
+}
+
+#gallery .gallery_images .item {
+    padding: 5px;
+}
+
+#gallery .gallery_images img {
+    width: 100%;
+}
+
+@media screen and (max-width:500px) {
+    
+}
